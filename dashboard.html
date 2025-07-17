@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Mailbox Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+</head>
+<body>
+<div class="dashboard">
+    <header>
+        <h1>Smart Mailbox Dashboard</h1>
+        <div class="user-info">
+            <span id="userEmail"></span>
+            <button id="logoutBtn" class="btn">Logout</button>
+        </div>
+    </header>
+
+    <div class="sensor-grid">
+        <div id="waterCard" class="sensor-card">
+            <h2>Water Detection</h2>
+            <p id="waterStatus">Loading...</p>
+        </div>
+
+        <div id="animalCard" class="sensor-card">
+            <h2>Animal Detection</h2>
+            <p id="animalStatus">Loading...</p>
+        </div>
+
+        <div class="sensor-card">
+            <h2>Mail Capacity</h2>
+            <div class="fill-container">
+                <div class="fill-bar">
+                    <div id="fillLevel" class="fill-level">0%</div>
+                </div>
+                <p>Distance: <span id="distanceValue">0</span> cm</p>
+            </div>
+        </div>
+
+        <div class="sensor-card">
+            <h2>Mailbox Access</h2>
+            <p>Last opened: <span id="lastAccess">Never</span></p>
+            <button id="openMailboxBtn" class="btn">Open Mailbox</button>
+        </div>
+
+        <div class="sensor-card">
+            <h2>Mail Delivery</h2>
+            <p>Letters received: <span id="letterCount">0</span></p>
+        </div>
+    </div>
+</div>
+
+<script src="firebase.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>
