@@ -1,12 +1,12 @@
 // Initialize Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyCjW3zaWC1LRp1ZHcZZ5dJz75A1VZtgzuk",
-    authDomain: "smartpostbox-c4221.firebaseapp.com",
-    databaseURL: "https://smartpostbox-c4221-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "smartpostbox-c4221",
-    storageBucket: "smartpostbox-c4221.firebasestorage.app",
-    messagingSenderId: "166198282053",
-    appId: "1:166198282053:web:899b98420ef18b1fcba02c"
+    apiKey: "Your_API_KEY",
+    authDomain: "AUTH_DOMAIN",
+    databaseURL: "DB_URL",
+    projectId: "################",
+    storageBucket: "#############",
+    messagingSenderId: "SENDER_ID",
+    appId: "APK_ID"
 };
 
 // Initialize Firebase
